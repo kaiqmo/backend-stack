@@ -35,4 +35,6 @@ app.use('/files', express.static(path.resolve(__dirname,'..', 'tmp')));// garant
 
 app.use(require('./routes'));// caminho relativo do routes
 
-server.listen(3333); // rota localhost:3333/teste
+server.listen(process.env.PORT || 3333); // rota localhost:3333/teste
+
+//var ambiente = pode sobreescrever a durante a aplicacao

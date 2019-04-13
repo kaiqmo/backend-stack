@@ -16,7 +16,9 @@ const File = new mongoose.Schema({
 });
 
 File.virtual('url').get(function(){
-    return `http://localhost:3333/files/${encodeURIComponent(this.path)}`;
+    const url = process.env.PORT || 'http://localhost:3333'; //url no heroku ou a nossa
+
+    return `${url}/files/${encodeURIComponent(this.path)}`;
 })
 
 module.exports = mongoose.model('File',File);
