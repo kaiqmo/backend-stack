@@ -1,3 +1,6 @@
+mongo , heroku 
+
+
 yarn create react-app nome 
 cria arquivo  react para frontend.
 
@@ -18,3 +21,5 @@ adicionar datas - yarn add date-fns
 arrastar = yarn add react-dropzone
 
 mexer com sockets para aplicacao em tempo real - yarn add socket.io-client
+
+para rodar um react - usa no heroku o mars/create-react-app
