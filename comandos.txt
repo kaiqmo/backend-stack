@@ -1,0 +1,10 @@
+yarn create react-app nome 
+cria arquivo  react para frontend.
+
+yarn start
+starta o server
+
+ferramenta NEXT ver
+
+
+para conectar o frontend com o backend ; yarn add axios
