@@ -13,8 +13,14 @@ export default class main extends Component {
     newBox: '',    
   };
 
-  handleSubmit = () => {
- 
+  handleSubmit = async e => {
+    e.preventDefault();
+    const response = await api.post('boxes', {
+      // automaticamente convertido pra json
+      title: this.state.newBox,
+    });
+    this.props.history.push(`/box/${response.data._id}`);
+    // joga a tela para o arquivo criado ou seja box criado
   }
 
   handleInputChange = (e) => {

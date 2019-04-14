@@ -8,3 +8,7 @@ ferramenta NEXT ver
 
 
 para conectar o frontend com o backend ; yarn add axios
+
+para conexao entre paginas  yarn add react-router-dom
+
+adicionar icones - yarn add react-icons
