@@ -12,3 +12,9 @@ para conectar o frontend com o backend ; yarn add axios
 para conexao entre paginas  yarn add react-router-dom
 
 adicionar icones - yarn add react-icons
+
+adicionar datas - yarn add date-fns
+
+arrastar = yarn add react-dropzone
+
+mexer com sockets para aplicacao em tempo real - yarn add socket.io-client
